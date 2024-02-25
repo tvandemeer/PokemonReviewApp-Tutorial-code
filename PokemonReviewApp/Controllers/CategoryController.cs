@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using PokemonReviewApp.Dto;
 using PokemonReviewApp.Interfaces;
 using PokemonReviewApp.Models;
+using PokemonReviewApp.Repository;
 
 namespace PokemonReviewApp.Controllers
 {
@@ -11,15 +12,57 @@ namespace PokemonReviewApp.Controllers
     [ApiController]
     public class CategoryController : ControllerBase
     {
-        private readonly IPokemonRepository _pokemonRepository;
+        private readonly ICategoryRepository _categoryRepository;
         private readonly IMapper _mapper;
 
-        public CategoryController(IPokemonRepository pokemonRepository, IMapper mapper)
+        public CategoryController(ICategoryRepository categoryRepository, IMapper mapper)
         {
-            _pokemonRepository = pokemonRepository;
+            _categoryRepository = categoryRepository;
             _mapper = mapper;
         }
 
         [HttpGet]
+        [ProducesResponseType(200, Type = typeof(IEnumerable<Category>))]
+        public IActionResult GetCategories()
+        {
+            var categories = _mapper.Map<List<CategoryDto>>(
+                _categoryRepository.GetCategories());
+
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            return Ok(categories);
+        }
+
+        [HttpGet("{categoryId}")]
+        [ProducesResponseType(200, Type = typeof(Category))]
+        [ProducesResponseType(400)]
+        public IActionResult GetCategory(int categoryId)
+        {
+            if (!_categoryRepository.CategoriesExists(categoryId))
+                return NotFound();
+
+            var category = _mapper.Map<CategoryDto>(
+                _categoryRepository.GetCategory(categoryId));
+
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            return Ok(category);
+        }
+
+        [HttpGet("pokemon/{categoryId}")]
+        [ProducesResponseType(200, Type = typeof(IEnumerable<Pokemon>))]
+        [ProducesResponseType(400)]
+        public IActionResult GetPokemonByCategory(int categoryId)
+        {
+            var pokemons = _mapper.Map<List<PokemonDto>>(
+                _categoryRepository.GetPokemonByCategory(categoryId));
+
+            if (!ModelState.IsValid)
+                return BadRequest();
+            
+            return Ok(pokemons);
+        }
     }
 }

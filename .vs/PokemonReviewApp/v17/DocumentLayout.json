@@ -1,7 +1,20 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\tvand\\Projects\\PokemonReviewApp\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{342A9247-510A-4E19-950C-9542B0EA1AFA}|PokemonReviewApp\\PokemonReviewApp.csproj|c:\\users\\tvand\\projects\\pokemonreviewapp\\pokemonreviewapp\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{342A9247-510A-4E19-950C-9542B0EA1AFA}|PokemonReviewApp\\PokemonReviewApp.csproj|solutionrelative:pokemonreviewapp\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{342A9247-510A-4E19-950C-9542B0EA1AFA}|PokemonReviewApp\\PokemonReviewApp.csproj|c:\\users\\tvand\\projects\\pokemonreviewapp\\pokemonreviewapp\\repository\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{342A9247-510A-4E19-950C-9542B0EA1AFA}|PokemonReviewApp\\PokemonReviewApp.csproj|solutionrelative:pokemonreviewapp\\repository\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{342A9247-510A-4E19-950C-9542B0EA1AFA}|PokemonReviewApp\\PokemonReviewApp.csproj|c:\\users\\tvand\\projects\\pokemonreviewapp\\pokemonreviewapp\\interfaces\\icategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{342A9247-510A-4E19-950C-9542B0EA1AFA}|PokemonReviewApp\\PokemonReviewApp.csproj|solutionrelative:pokemonreviewapp\\interfaces\\icategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 197,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -44,8 +57,43 @@
               "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CategoryRepository.cs",
+              "DocumentMoniker": "C:\\Users\\tvand\\Projects\\PokemonReviewApp\\PokemonReviewApp\\Repository\\CategoryRepository.cs",
+              "RelativeDocumentMoniker": "PokemonReviewApp\\Repository\\CategoryRepository.cs",
+              "ToolTip": "C:\\Users\\tvand\\Projects\\PokemonReviewApp\\PokemonReviewApp\\Repository\\CategoryRepository.cs",
+              "RelativeToolTip": "PokemonReviewApp\\Repository\\CategoryRepository.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAwwCUAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-12T10:40:03.664Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ICategoryRepository.cs",
+              "DocumentMoniker": "C:\\Users\\tvand\\Projects\\PokemonReviewApp\\PokemonReviewApp\\Interfaces\\ICategoryRepository.cs",
+              "RelativeDocumentMoniker": "PokemonReviewApp\\Interfaces\\ICategoryRepository.cs",
+              "ToolTip": "C:\\Users\\tvand\\Projects\\PokemonReviewApp\\PokemonReviewApp\\Interfaces\\ICategoryRepository.cs",
+              "RelativeToolTip": "PokemonReviewApp\\Interfaces\\ICategoryRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-12T10:34:42.538Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "C:\\Users\\tvand\\Projects\\PokemonReviewApp\\PokemonReviewApp\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "PokemonReviewApp\\Controllers\\CategoryController.cs",
+              "ToolTip": "C:\\Users\\tvand\\Projects\\PokemonReviewApp\\PokemonReviewApp\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "PokemonReviewApp\\Controllers\\CategoryController.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAmwB8AAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-12T10:33:14.601Z",
+              "EditorCaption": ""
             }
           ]
         }

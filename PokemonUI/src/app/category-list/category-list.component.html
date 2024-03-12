@@ -1,0 +1,22 @@
+<div class="container">
+	<div class="row">
+		<div class="col">
+			<table class="table table-striped">
+				<thead>
+					<tr>
+						<th scope="col">Id</th>
+						<th scope="col">Name</th>
+					</tr>
+				</thead>
+				<tbody>
+					@for (cat of categories; track cat.id) {
+					<tr>
+						<td>{{ cat.id }}</td>
+						<td>{{ cat.name }}</td>
+					</tr>
+					}
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
